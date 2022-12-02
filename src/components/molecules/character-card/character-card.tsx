@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import CardHeader from '../../atoms/card-header/card-header'
-import CardBody from '../../atoms/card-body/card-body'
+import CardBody from '../card-body/card-body'
 import { Character } from '../../../utils/interfaces/character'
 
 interface CharacterCardProps {

@@ -1,10 +1,11 @@
 import { FC } from 'react'
-import { Button } from '../button/button'
+import { Button } from '../../atoms/button/button'
 import DeleteIcon from '../../../assets/delete-icon.svg'
 import EditIcon from '../../../assets/edit-icon.svg'
 import './card-body.scss'
 
 export interface CardBodyProps {
+  id: number,
   status: string
   species: string
   gender: string
