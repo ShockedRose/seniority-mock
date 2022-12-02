@@ -5,7 +5,7 @@ import EditIcon from '../../../assets/edit-icon.svg'
 import './card-body.scss'
 
 export interface CardBodyProps {
-  id: number,
+  id: number
   status: string
   species: string
   gender: string
