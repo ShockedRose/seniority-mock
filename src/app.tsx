@@ -1,15 +1,16 @@
 import './app.scss'
 import { APP_CONSTANTS } from './constants/app-constants'
 import { Header } from './components/organisms/header/header'
-import { usePlayers } from './hooks/use-players/use-players'
+import { useCharacters } from './hooks/use-characters/use-characters'
+import CharacterCard from './components/molecules/character-card/character-card'
 
 function App() {
-  const { players } = usePlayers()
+  const { characters } = useCharacters()
   return (
     <div className="app">
       <Header title={APP_CONSTANTS.APP_TITLE} />
-      {players.map((player) => {
-        return <p key={player.id}>{player.firstName}</p>
+      {characters.map((character) => {
+        return <CharacterCard key={character.id} character={character} />
       })}
     </div>
   )

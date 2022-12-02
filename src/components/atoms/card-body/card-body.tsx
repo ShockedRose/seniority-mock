@@ -7,7 +7,7 @@ import './card-body.scss'
 export interface CardBodyProps {
   status: string
   species: string
-  genre: string
+  gender: string
 }
 
 const CardBody: FC<CardBodyProps> = (props) => {
@@ -21,11 +21,11 @@ const CardBody: FC<CardBodyProps> = (props) => {
           </div>
           <div className="card-body__info-container">
             <span>Species</span>
-            <span>{props.genre}</span>
+            <span>{props.species}</span>
           </div>
           <div className="card-body__info-container">
-            <span>Genre</span>
-            <span>{props.genre}</span>
+            <span>Gender</span>
+            <span>{props.gender}</span>
           </div>
         </div>
         {/* <div className="card-body__buttons-wrapper">

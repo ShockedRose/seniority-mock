@@ -1,20 +1,17 @@
 import { FC } from 'react'
 import CardHeader from '../../atoms/card-header/card-header'
 import CardBody from '../../atoms/card-body/card-body'
+import { Character } from '../../../utils/interfaces/character'
 
 interface CharacterCardProps {
-  name: string
-  status: string
-  species: string
-  genre: string
-  image: string
+  character: Character
 }
 
-const CharacterCard: FC<CharacterCardProps> = (props) => {
+const CharacterCard: FC<CharacterCardProps> = ({ character }) => {
   return (
     <div className="character-card">
-      <CardHeader {...props} />
-      <CardBody {...props} />
+      <CardHeader {...character} />
+      <CardBody {...character} />
     </div>
   )
 }
