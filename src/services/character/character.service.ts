@@ -5,7 +5,7 @@ const API_URL = process.env.REACT_APP_API_URL as string
 
 export default class CharacterService {
   static async getCharacters() {
-    const response = await axios.get<CharacterList>(`${API_URL}/player`)
+    const response = await axios.get<CharacterList>(`${API_URL}/character`)
     return response.data
   }
 }
