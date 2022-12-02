@@ -43,10 +43,12 @@ export class PlayerService {
     const response = await axios.post<Player>(`${API_URL}player`, newPlayer)
     return response.data
   }
+
   static async updatePlayer(playerId: number, updatedPlayer: Player) {
     const response = await axios.patch<Player>(`${API_URL}player/${playerId}`, updatedPlayer)
     return response.data
   }
+
   static async deletePlayer(playerId: number) {
     const response = await axios.delete<DeleteConfirmation>(`${API_URL}player/${playerId}`)
     return response.data
